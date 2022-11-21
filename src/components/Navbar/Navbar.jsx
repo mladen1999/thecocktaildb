@@ -12,7 +12,7 @@ const Navbar = () => {
   const onChangeHandler = (e) => {
     setSearchValue(e.target.value);
   };
-
+  /*return */
   return (
     <nav className="navbar">
       <Link to="/">
