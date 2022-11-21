@@ -23,8 +23,8 @@ const Navbar = () => {
           type="text"
           value={searchValue}
           onChange={onChangeHandler}
+          placeholder="Search"
         ></input>
-        <button>Search</button>
       </div>
     </nav>
   );

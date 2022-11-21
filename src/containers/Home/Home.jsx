@@ -13,14 +13,14 @@ const Home = () => {
   if (error) {
     return <div>Error: {error.message}</div>;
   }
-  if (!isLoaded) {
+  if (isLoaded) {
     return <div>Loading...</div>;
   }
 
   return (
     <div className="home">
-      {drinks?.drinks ? (
-        drinks.drinks.map((item) => <Card key={item.idDrink} {...item} />)
+      {drinks ? (
+        drinks.map((item) => <Card key={item.idDrink} {...item} />)
       ) : (
         <div>Error </div>
       )}
